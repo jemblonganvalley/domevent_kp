@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="belajar dom event">
+    <title>domevent</title>
+</head>
+<body>
+
+    <div class="modalMenu" >
+
+        <span class="material-icons closeIcon" onclick="hideModal()">close</span>
+
+        <a href="#home" onclick="hideModal()">HOME</a>
+        <a href="#about" onclick="hideModal()">ABOUT</a>
+        <a href="#gallery" onclick="hideModal()">GALLERY</a>
+        <a href="#contact" onclick="hideModal()">CONTACT</a>
+        
+    </div>
+
+    <nav class="navbar">
+        <h3 class="brand">JSYIFA</h3>
+        <span class="material-icons menuIcon" onclick="showModal()"> menu </span>
+    </nav>
+
+    <main class="container">
+
+        <section class="home" id="home">
+
+            <div class="aboutAlert" >
+                Selamat datang di web sederhana saya ini
+                <span class="material-icons alertClose" onclick="closeAlert()">close</span>
+            </div>
+
+            <div class="home_content">
+                <img src="./photo_profile.jpeg" alt="" class="heroImage">
+
+                <h1 class="heroText">
+                    <span style="color : orange;">WEB</span>  PROFILE <br /> <span style="
+                    font-size: 12rem;
+                    ">FADLI<span/>
+                </h1>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            
+            <div class="about_box1 box">
+                
+            </div>
+
+            <div class="about_box2 box">
+
+                <h1>Ini Cerita Saya..</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae, quas, in quisquam asperiores placeat exercitationem voluptatibus maxime dolores deserunt sit cum laboriosam molestiae, dolorum eveniet ipsum perferendis. Eaque, consequatur?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cumque nulla quidem ea amet quasi veniam voluptatibus laudantium dolor explicabo quas quod quisquam libero veritatis id sunt, atque voluptatem! Rem?
+                </p>
+
+            </div>
+
+            <div class="about_box3 box">
+                
+                <h1>Ini Sejarah Saya..</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae, quas, in quisquam asperiores placeat exercitationem voluptatibus maxime dolores deserunt sit cum laboriosam molestiae, dolorum eveniet ipsum perferendis. Eaque, consequatur?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cumque nulla quidem ea amet quasi veniam voluptatibus laudantium dolor explicabo quas quod quisquam libero veritatis id sunt, atque voluptatem! Rem?
+                </p>
+            </div>
+
+            <div class="about_box4 box">
+                
+            </div>
+
+        </section>
+        
+        <section class="gallery" id="gallery">
+
+            <h1>GALLERY</h1>
+
+            <div class="container-gallery" id="container-gallery">
+                <!-- ELEMENT ARI LASSO -->
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+          contact
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="left">
+            <h3>site map</h3>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="#gallery">gallery</a>
+        </div>
+
+        <div class="right">
+            <div class="col1">
+
+                <div class="formGroup">
+                    <label for="name">Nama</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                 <div class="formGroup">
+                    <label for="phone">Wa Number</label>
+                    <input type="phone" name="phone" id="phone">
+                </div>
+
+                 <div class="formGroup">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+            </div>
+
+            <div class="col2">
+
+                 <div class="formGroup">
+                    <label for="message">pesan</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="formGroup">
+                    <button class="kirim">
+                        kirim pesan
+                    </button>
+                </div>
+            
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+<script src='./main.js'></script>
+</body>
+</html>
